@@ -19,15 +19,44 @@
     }
     
     .container,
-    .vehicle-row {
+    .vehicle__row {
       max-width: 910px;
       margin: 0 auto;
     }
     
-    .vehicle-col {
-      float: left;
-      margin-right: 30px;
+    .vehicle__section {
+      display: block;
+      margin-bottom: 50px;
+    }
+    
+    .vehicle__row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    .vehicle__col {
       border: 1px solid #eaeaea;
+      margin-bottom: 30px;
+      padding: 5px;
+    }
+    /* three-part row */
+    
+    .vehicle__col1 {
+      flex-basis: 18%;
+    }
+    
+    .vehicle__col2 {
+      flex-basis: 24%;
+    }
+    
+    .vehicle__col3 {
+      flex-basis: 51%;
+    }
+    /* two part row */
+    
+    .vehicle__col--half {
+      flex-basis: 45%;
     }
     
     svg {
@@ -63,8 +92,8 @@
     }
     
     .st2 {
-      fill: none;
-      stroke: #fff;
+      fill: none!important;
+      stroke: #fff!important;
       stroke-width: 3;
       stroke-miterlimit: 10;
     }
@@ -79,43 +108,18 @@
       -webkit-transform: translate(6.28px, 103.3px);
       transform: translate(6.28px, 103.3px);
     }
-    /* suv */
-    
-    .row--suv {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-    
-    .vehicle-col--suv {
-      border: 1px solid #eaeaea;
-      margin-bottom: 30px;
-      padding: 5px;
-    }
-    
-    .vehicle-col--suv1 {
-      flex-basis: 18%;
-    }
-    
-    .vehicle-col--suv2 {
-      flex-basis: 24%;
-    }
-    
-    .vehicle-col--suv3 {
-      flex-basis: 51%;
-    }
     
     @media only screen and (max-width: 580px) {
-      .row--suv {
+      .vehicle__row {
         flex-wrap: wrap;
       }
-      .vehicle-col--suv1 {
+      .vehicle__col1 {
         flex-basis: 40%;
       }
-      .vehicle-col--suv2 {
+      .vehicle__col2 {
         flex-basis: 53%;
       }
-      .vehicle-col--suv3 {
+      .vehicle__col3 {
         flex-basis: 100%;
       }
     }
@@ -124,7 +128,7 @@
 
 <body>
   <div class="container">
-    <div class="vehicle-row row">
+    <div class="row">
       <h4>Пример того как должно быть</h4>
       <ul>
         <li>одинаковые отступы от границ со всех сторон</li>
@@ -132,52 +136,146 @@
         <li>авто из трех разных картинок, мото из двух</li>
       </ul>
       <br>
-      <br>
-      <h4>#0 by Roman</h4>
-      <div class=" row--suv">
-        <div class="vehicle-col--suv vehicle-col--suv1">
+    </div>
+
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>sedan</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col1">
+          <img src="vehicles/sedan_up.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col2">
+          <img src="vehicles/sedan_front_back.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col3">
+          <img src="vehicles/sedan_sides.svg" alt="" class="svg">
+        </div>
+      </div>
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>suv</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col1">
           <img src="vehicles/suv_up.svg" alt="" class="svg">
         </div>
-        <div class="vehicle-col--suv vehicle-col--suv2">
+        <div class="vehicle__col vehicle__col2">
           <img src="vehicles/suv_front_back.svg" alt="" class="svg">
         </div>
-        <div class="vehicle-col--suv vehicle-col--suv3">
-          <img src="vehicles/suv_left_right.svg" alt="" class="svg">
+        <div class="vehicle__col vehicle__col3">
+          <img src="vehicles/suv_sides.svg" alt="" class="svg">
         </div>
       </div>
-      <br/>
-      <!-- <h4>#1</h4>
-      <div class="vehicle-col" style="width: 17%;">
-        <img src="vehicles/sedan_up.svg" alt="" class="svg">
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>coupe</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col1">
+          <img src="vehicles/coupe_up.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col2">
+          <img src="vehicles/coupe_front_back.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col3">
+          <img src="vehicles/coupe_sides.svg" alt="" class="svg">
+        </div>
       </div>
-      <div class="vehicle-col" style="width: 22%;">
-        <img src="vehicles/sedan_front_back.svg" alt="" class="svg">
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>hatchback</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col1">
+          <img src="vehicles/hatchback_up.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col2">
+          <img src="vehicles/hatchback_front_back.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col3">
+          <img src="vehicles/hatchback_sides.svg" alt="" class="svg">
+        </div>
       </div>
-      <div class="vehicle-col" style="width: 51%;">
-        <img src="vehicles/sedan_left_right.svg" alt="" class="svg">
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>van-1</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col1">
+          <img src="vehicles/van-1_up.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col2">
+          <img src="vehicles/van-1_front_back.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col3">
+          <img src="vehicles/van-1_sides.svg" alt="" class="svg">
+        </div>
       </div>
-    </div>
-    <br>
-    <br>
-    <h4>#2</h4>
-    <div class="vehicle-row row">
-      <div class="vehicle-col" style="width: 45%;">
-        <img src="vehicles/moto_left.svg" alt="" class="svg">
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>van-2</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col1">
+          <img src="vehicles/van-2_up.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col2">
+          <img src="vehicles/van-2_front_back.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col3">
+          <img src="vehicles/van-2_sides.svg" alt="" class="svg">
+        </div>
       </div>
-      <div class="vehicle-col" style="width: 45%;">
-        <img src="vehicles/moto_right.svg" alt="" class="svg">
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>wagon</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col1">
+          <img src="vehicles/wagon_up.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col2">
+          <img src="vehicles/wagon_front_back.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col3">
+          <img src="vehicles/wagon_sides.svg" alt="" class="svg">
+        </div>
       </div>
-    </div> -->
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>motorcycle</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col--half">
+          <img src="vehicles/moto_left.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col--half">
+          <img src="vehicles/moto_right.svg" alt="" class="svg">
+        </div>
+      </div>
+    </section>
+    <!-- new section -->
+    <section class="vehicle__section">
+      <h4>motorcycle</h4>
+      <div class="vehicle__row">
+        <div class="vehicle__col vehicle__col--half">
+          <img src="vehicles/kvadro_front.svg" alt="" class="svg">
+        </div>
+        <div class="vehicle__col vehicle__col--half">
+          <img src="vehicles/kvadro_back.svg" alt="" class="svg">
+        </div>
+      </div>
+    </section>
+  </div>
 
-    </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-    </script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/inlineSVG.min.js"></script>
-    <script src="js/main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+  </script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/inlineSVG.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
