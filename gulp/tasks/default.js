@@ -1,12 +1,12 @@
-var gulp = require('gulp');
+var gulp        = require('gulp');
 var runSequence = require('run-sequence');
-var config = require('../config');
+var config      = require('../config');
 
 gulp.task('default', function(cb) {
-  runSequence(
-    'build:dev',
-    // 'watch',
-    'server',
-    cb
-  );
+    runSequence(
+        'build:dev',
+        'watch',
+        'server',
+        cb
+    );
 });
