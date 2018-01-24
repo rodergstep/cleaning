@@ -44,8 +44,123 @@
       <!-- end header -->
       <!-- begin main  -->
       <main class="main">
-        <section class="content about-content">
-          <div class="container"> </div>
+        <section class="summary">
+          <div class="container">
+            <h2 class="content__title">Order Summary</h2>
+            <div class="header__order row" id="header__right">
+              <div class="stage stage--bedrooms">
+                <p class="stage__name">Bedrooms</p>
+                <p class="stage__value">Studio</p>
+                <p class="stage__desc"></p>
+              </div>
+              <div class="stage">
+                <p class="stage__name">Bathrooms</p>
+                <p class="stage__value">2</p>
+                <p class="stage__desc"></p>
+              </div>
+              <div class="stage">
+                <p class="stage__name">Clean Type</p>
+                <p class="stage__value">Standart</p>
+                <p class="stage__desc">2 - 2.5 Hours</p>
+              </div>
+              <div class="stage stage--date">
+                <p class="stage__name">SCHEDULE DATE</p>
+                <p class="stage__value">Januar, 17, 2018</p>
+                <p class="stage__desc">Wednesday</p>
+              </div>
+              <div class="stage stage--address">
+                <p class="stage__name">address</p>
+                <p class="stage__value">2348 Massachusetts Ave </p>
+                <p class="stage__desc">Cambridge, MA 02140</p>
+              </div>
+              <div class="stage stage--addons">
+                <p class="stage__name">addons</p>
+                <div class="stage__value">
+                  <div class="addons">
+                    <div class="addon addon--remove"> <svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg> <a href="#" class="icon-action icon-remove" type="button">
+                  <span></span><span></span>
+                </a> </div>
+                    <div class="addon"> <svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg> </div>
+                    <div class="addon addon--add"> <svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg> <a href="#" class="icon-action icon-add" type="button">
+                  <span></span><span></span>
+                </a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="summary__total"> <span>Total</span> <span>$265.59</span> </div>
+        </section>
+        <section class="content payment-content">
+          <div class="container">
+            <h2 class="content__title text-center">Almost there!</h2>
+            <p class="content__subtitle text-center">Enter your payment & contact info to finalize your appointment.</p>
+            <div class="form">
+              <form action="#">
+                <!-- row -->
+                <div class="row">
+                  <div class="col col-half"> <label class="form__label" for="form-card">credit card</label> <input type="number" name="card" id="form-card" class="form__input"> </div>
+                  <div class="col"> <label class="form__label" for="form-exp-data">exp.data</label> <input type="number" name="exp-data" id="form-exp-data" class="form__input"> </div>
+                  <div class="col col-small"> <label class="form__label" for="form-cvv">cvv</label> <input type="number" name="cvv" id="form-cvv" class="form__input"> </div>
+                </div>
+                <!-- row -->
+                <div class="row">
+                  <div class="col col-quater"> <label class="form__label" for="form-fullname">full name</label> <input type="text" name="fullname" id="form-fullname" class="form__input"> </div>
+                  <div class="col"> <label class="form__label" for="form-email">email</label> <input type="email" name="email" id="form-email" class="form__input"> </div>
+                  <div class="col"> <label class="form__label" for="form-phone">phone</label> <input type="phone" name="phone" id="form-phone" class="form__input"> </div>
+                  <div class="col col-small"> <label class="form__label" for="form-waycontact">best way to contact</label> <select id="waycontact">
+                  <option value="0"  selected="selected" >Text</option>
+                  <option value="1">Email</option>
+                  <option value="2">Phone</option>
+                </select> </div>
+                </div>
+                <!-- cout block -->
+                <div class="form__count">
+                  <div class="count__block">
+                    <div class="count__row count__head">
+                      <p>APPOINTMENT VALUE - <a href="#" class="count__details">Details</a></p>
+                      <p>$243.94</p>
+                    </div>
+                    <div class="count__row">
+                      <p>Discounts - <a href="#" class="count__details">Details</a></p>
+                      <p>- $0.00</p>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="count__block">
+                    <div class="row flex-end">
+                      <div class="col col--wide"> <label class="form__label" for="form-discount">discount</label> <input type="discount" name="discount" id="form-discount" class="form__input"> </div>
+                      <div class="col"> <a href="#" type="button" class="btn btn--dusty">Apply</a> </div>
+                    </div>
+                  </div>
+                  <!-- cout block -->
+                  <div class="count__block">
+                    <div class="count__row count__head">
+                      <p>Subtotal - <a href="#" class="count__details">Details</a></p>
+                      <p>$243.94</p>
+                    </div>
+                    <div class="count__row">
+                      <p>Discounts - <a href="#" class="count__details">Details</a></p>
+                      <p>- $21.65</p>
+                    </div>
+                  </div>
+                  <!-- cout block -->
+                  <div class="count__block">
+                    <div class="count__row count__total">
+                      <p>Total</p>
+                      <p>$243.94</p>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row"> <button type="submit" class="btn btn--green btn-submit">Submit</button> </div>
+                  <div class="row count__agree">
+                    <div class="custom-checbox"> <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2" checked> <label for="styled-checkbox-2"></label> </div>
+                    <p>I Agree To MyClean's <a href="#" class="count__details">Terms</a> And <a href="#" class="count__details">Privacy Policy</a>.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </section>
       </main>
       <!-- end main -->
