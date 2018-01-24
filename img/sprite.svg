@@ -39,21 +39,13 @@
         </style>
     
         <style>
-            .cls-1{fill:none;stroke:#00a651;stroke-width:2px;fill-rule:evenodd}
-        </style>
-    
-        <style>
             .cls-1{fill:#231f20}
         </style>
     
         <style>
             .cls-1{fill:#fff}
         </style>
-    </defs><symbol id="icon-arrow-left" viewBox="0 0 15 28">
-    <image data-name="Shape 4 copy 2" width="15" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAQAAAAUnS30AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiARUULRNyRI6pAAAAwklEQVQoz32TywrCMBBFJ67rW/9XiogUUREp/RNxXRVR6+OLjosQ0kcmySITDklm7twYRBlGCjkJ4WkoKEk0mHOhj4ThkSsDJIQNB24M7a4L99wd7OIdDw/beMuzDpt4w4tR8zYfZlSM24m6YMWbSbdIuyz5MA0JJAgpX2ZhcYUFP+aK8tITkZ7oAyHVz7vUlNd9YcHcfbgOVV7fZFS6qFb1SEtszyINtR2P2MH6RTWTc5tqRedV1cjO6SWJiXyiXM5/dsCdT2xqOqYAAAAASUVORK5CYII="/>
-</symbol><symbol id="icon-arrow-right" viewBox="0 0 15 28">
-    <image data-name="Shape 4 copy 3" width="15" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAcCAQAAAAUnS30AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiARUULRNyRI6pAAAAiElEQVQoz32T0Q2AIAxEL8YVdB/3cYe6mUu4hUOcH4pQaA8+aHMvpS0F3HkQ2QZXXjkAgksOvEcKFCMBqhkCrRMAnh6A/rYOGLN1QFRtA8Td+oGs2x8wI143NpzABLWogptKzVRhptpiqqlWfSmOD2o+mhT9MA1iO4qBWAc5FMs3SEQC3HOReAD7tKsfGMroggAAAABJRU5ErkJggg=="/>
-</symbol><symbol id="icon-cancel-green" viewBox="0 0 18 18">
+    </defs><symbol id="icon-cancel-green" viewBox="0 0 18 18">
     <image data-name="&#x428;&#x430;&#x440; 0" width="18" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAP1BMVEUAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAAACKcQdAAAAAE3RSTlMAbt0eH8beD8fizuDKyd/FJ6+uzPinbwAAAAFiS0dEFJLfyTUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiARUUNChYT86VAAAAY0lEQVQY023OSQ7AIAxD0UATxg60vv9dW1GEEgkv38afnN9Ijb0jQVDGAUIxIbCSFEnbEGVTpikZZqRbzkY+K0AxQlyBykYC9kP1ja8oi2ZZNMui+Tc+dXM3sc2Ci9ptm5/2AogxBZVhpCCuAAAAAElFTkSuQmCC"/>
 </symbol><symbol id="icon-certification" viewBox="0 0 33.22 46.22">
     
@@ -152,9 +144,8 @@
     <g id="Layer_2" data-name="Layer 2">
         <path class="cls-1" d="M28.83 0l7.33 20.22 21.5.73-16.97 13.22 5.95 20.66-17.81-12.05-17.82 12.05 5.96-20.66L0 20.95l21.5-.73L28.83 0z" id="Layer_1-2" data-name="Layer 1"/>
     </g>
-</symbol><symbol id="icon-tick-green" viewBox="0 0 25.562 17.56">
-    
-    <path id="Shape_5_copy_3" data-name="Shape 5 copy 3" class="cls-1" d="M482.122 3216.77l7.983 7.96 12.772-12.73" transform="translate(-479.719 -3211)"/>
+</symbol><symbol id="icon-tick-green" viewBox="0 0 24 15">
+    <image data-name="Shape 5 copy 9" width="24" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAPCAMAAADJev/pAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUVBMVEUAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAplEAAADErwDYAAAAGXRSTlMAhlSJ9Bn5UYoBLItQk0pPjkuMTo1Nj0z+Arbx1QAAAAFiS0dEGnVn5DIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiARcVCA5SepArAAAAY0lEQVQY023QWRaAIAgFUJpegw2WTex/o3WyMhK/OBcEkUg7SaoyZZwXuqPUvLq9bqQbRnt5h/7ng48sY9RcZiaGC1UzY3kj9+37ZEKF7GAj9zNXxhZvZXgXrxN3VD9/VOxJBz/2BQp68EMdAAAAAElFTkSuQmCC"/>
 </symbol><symbol id="icon-twenty-four" viewBox="0 0 46.26 42.61">
     
     <title>

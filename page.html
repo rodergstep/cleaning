@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Cleaner Master</title>
+    <title>Cleaning Master</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -27,14 +27,17 @@
       <!-- begin header  -->
       <header class="header">
         <div class="container">
-          <div class="row">
+          <div class="header__inner">
             <div class="header__logo"> <a href="#">
           <img src="img/logo.png" alt="Cleaning Master">
         </a> </div>
-            <div class="header__right row">
+            <div class="nav-wrap row" id="nav-wrap">
               <nav class="nav"> <a href="#" class="nav__item">Home cleaning</a> <a href="#" class="nav__item">Office cleaning</a> <a href="#" class="nav__item">FAQ</a> </nav>
               <div class="header__profile"> <a href="tel:(347) 896-2580" class="header__phone">(347) 896-2580</a> <a href="#" class="header__login">Login</a> </div>
             </div>
+            <a href="#" id="touch-menu">
+              <div id="nav-icon1"> <span></span> <span></span> <span></span> </div>
+            </a>
           </div>
         </div>
       </header>
@@ -100,26 +103,288 @@
               <p class="benefits__moto">Get your day back. It’s easy</p>
             </div>
           </div>
-          <div class="benefits_box">
+          <div class="benefits__box">
             <div class="benefits__item">
-              <div class="benefits__icon"> <svg class="icon icon-certification"><use xlink:href="img/sprite.svg#icon-certification"></use></svg> </div>
-              <p class="benefits__name"></p>
-              <p class="benefits__desc"></p>
+              <div class="benefits__icon"><span class="benefits__icon-bg">
+<svg class="icon icon-certification"><use xlink:href="img/sprite.svg#icon-certification"></use></svg>
+</span></div>
+              <p class="benefits__name">Certification</p>
+              <p class="benefits__desc">Cleaners certified & highly experienced professionals.</p>
             </div>
             <div class="benefits__item">
-              <div class="benefits__icon"></div>
-              <p class="benefits__name"></p>
-              <p class="benefits__desc"></p>
+              <div class="benefits__icon"><span class="benefits__icon-bg">
+<svg class="icon icon-fair"><use xlink:href="img/sprite.svg#icon-fair"></use></svg>
+</span></div>
+              <p class="benefits__name">Fair Prices</p>
+              <p class="benefits__desc">We aren’t cheapest, but we won’t ruin your wallet.</p>
             </div>
             <div class="benefits__item">
-              <div class="benefits__icon"></div>
-              <p class="benefits__name"></p>
-              <p class="benefits__desc"></p>
+              <div class="benefits__icon"><span class="benefits__icon-bg">
+<svg class="icon icon-staff"><use xlink:href="img/sprite.svg#icon-staff"></use></svg>
+</span></div>
+              <p class="benefits__name">Professional Staff</p>
+              <p class="benefits__desc">We are professional and <br> experienced cleaning staff.</p>
             </div>
             <div class="benefits__item">
-              <div class="benefits__icon"></div>
-              <p class="benefits__name"></p>
-              <p class="benefits__desc"></p>
+              <div class="benefits__icon"><span class="benefits__icon-bg">
+<svg class="icon icon-twenty-four"><use xlink:href="img/sprite.svg#icon-twenty-four"></use></svg>
+</span></div>
+              <p class="benefits__name">24/7 Opened</p>
+              <p class="benefits__desc">We work hard so you <br> don’t have to.</p>
+            </div>
+          </div>
+        </section>
+        <section class="content reviews-content">
+          <div class="container">
+            <div class="row reviews__row">
+              <div class="col-left">
+                <div class="reviews__text">
+                  <div class="reviews__partner"> <img src="img/amazone_dark.png" alt="Amazon"> </div>
+                  <div class="reviews__stars"> <span class="reviews__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="reviews__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="reviews__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="reviews__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="reviews__star reviews__star--empty">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> </div>
+                  <p class="paragraph">4.0 stars on Amazon!</p> <a href="#" type="button" class="btn btn--blue">Write a Review</a> </div>
+              </div>
+              <div class="">
+                <div class="reviews__slider" id="reviews__slider">
+                  <div class="slider__item">
+                    <div class="slider__stars"> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star slider__star--empty">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> </div>
+                    <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc
+                      ut egestas neque, eu hendrerit lacus. <span class="feedback__curves feedback__curves--end">
+<svg class="icon icon-curves"><use xlink:href="img/sprite.svg#icon-curves"></use></svg>
+</span> <span class="feedback__curves feedback__curves--begin">
+<svg class="icon icon-curves2"><use xlink:href="img/sprite.svg#icon-curves2"></use></svg>
+</span></p>
+                    <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__stars"> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star slider__star--empty">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> </div>
+                    <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc
+                      ut egestas neque, eu hendrerit lacus. <span class="feedback__curves feedback__curves--end">
+<svg class="icon icon-curves"><use xlink:href="img/sprite.svg#icon-curves"></use></svg>
+</span> <span class="feedback__curves feedback__curves--begin">
+<svg class="icon icon-curves2"><use xlink:href="img/sprite.svg#icon-curves2"></use></svg>
+</span></p>
+                    <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__stars"> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> <span class="slider__star slider__star--empty">
+<svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg>
+</span> </div>
+                    <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc
+                      ut egestas neque, eu hendrerit lacus. <span class="feedback__curves feedback__curves--end">
+<svg class="icon icon-curves"><use xlink:href="img/sprite.svg#icon-curves"></use></svg>
+</span> <span class="feedback__curves feedback__curves--begin">
+<svg class="icon icon-curves2"><use xlink:href="img/sprite.svg#icon-curves2"></use></svg>
+</span></p>
+                    <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content pricing-content">
+          <div class="container">
+            <h2 class="section__title text-center">Pricing pricings</h2>
+            <div class="row">
+              <p class="paragraph pricing__desc text-center">In elementum? Turpis adipiscing porta a ut amet, aenean adipiscing. Integer egestas? Proin in placerat et nisi penatibus, lorem? Parturient. Penatibus, sociis habitasse? Est dignissim et, ridiculus adipiscing sit facilisis</p>
+            </div>
+            <div class="pricig-row">
+              <div class="pricing-table">
+                <div class="pricing">
+                  <div class="pricing__head"> <span class="dollar">$</span>
+                    <p class="pricing__price">90</p>
+                  </div>
+                  <div class="pricing__body">
+                    <p class="pricing__name"><span class="text-bold">Standart</span> Cleaning</p>
+                    <ul class="pricing__list">
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 01</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 02</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 03</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 04</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-cancel-green"><use xlink:href="img/sprite.svg#icon-cancel-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 05</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <a href="#" type="button" class="btn btn--empty">Order Now</a> </div>
+              <div class="pricing-table">
+                <div class="pricing">
+                  <div class="pricing__head"> <span class="dollar">$</span>
+                    <p class="pricing__price">120</p>
+                  </div>
+                  <div class="pricing__body">
+                    <p class="pricing__name"><span class="text-bold">Deep</span> Cleaning</p>
+                    <ul class="pricing__list">
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 01</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 02</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 03</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 04</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-cancel-green"><use xlink:href="img/sprite.svg#icon-cancel-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 05</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <a href="#" type="button" class="btn btn--empty">Order Now</a> </div>
+              <div class="pricing-table">
+                <div class="pricing">
+                  <div class="pricing__head"> <span class="dollar">$</span>
+                    <p class="pricing__price">250</p>
+                  </div>
+                  <div class="pricing__body">
+                    <p class="pricing__name"><span class="text-bold">Move-In/</span><span class="text-bold"> Move-Out </span> Cleaning</p>
+                    <ul class="pricing__list">
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 01</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 02</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 03</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-tick-green"><use xlink:href="img/sprite.svg#icon-tick-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 04</p>
+                      </li>
+                      <li class="pricing__list-item"> <span class="pricing__icon">
+<svg class="icon icon-cancel-green"><use xlink:href="img/sprite.svg#icon-cancel-green"></use></svg>
+</span>
+                        <p class="pricing__feature">Feature 05</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <a href="#" type="button" class="btn btn--empty">Order Now</a> </div>
+            </div>
+          </div>
+        </section>
+        <section class="hiring-content">
+          <div class="container">
+            <div class="row hiring__row">
+              <div class="col-left">
+                <div class="hiring__text">
+                  <h2 class="section__title">We're Hiring!</h2>
+                  <p class="paragraph">Interested in working with us? Learn more about our process, benefits, and flexible scheduling</p> <a href="#" type="button" class="btn btn--green">Apply now</a> </div>
+              </div>
+              <div class="col-right">
+                <div class="hiring__video">
+                  <div class="video"> <iframe width="630" height="353" class="video__frame" src="https://www.youtube.com/embed/kNOQ3VRCUlw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content sign-content">
+          <div class="container">
+            <h2 class="section__title text-center">Ready for more ‘you’ time? <br> Sign up today.</h2>
+            <div class="row">
+              <div class="sign__book">
+                <form action="#" class="form">
+                  <div class="form__inputs"> <select id="select-city--bt">
+                    <option value="0" selected="selected">NYC</option>
+                    <option value="1">CHI</option>
+                    <option value="2">LA</option>
+                  </select> <select id="select-apartments--bt">
+                    <option value="0" selected="selected">Studio</option>
+                    <option value="1">1 Bedroom</option>
+                    <option value="2">2 Bedroom</option>
+                    <option value="3">3 Bedroom</option>
+                  </select> <select id="select-bathrooms--bt">
+                    <option value="0" selected="selected">1 Bathroom</option>
+                    <option value="1">2 Bathroom</option>
+                    <option value="2">3 Bathroom</option>
+                    <option value="3">4 Bathroom</option>
+                  </select> <select id="select-plan--bt">
+                    <option value="0"  selected="selected" 
+                        data-description="∽ 2hours">Standart</option>
+                    <option value="1" 
+                        data-description="3-3.5 hours">Standart Plus</option>
+                    <option value="2"
+                        data-description="3-3.5 hours">Deep Clean</option>
+                    <option value="3" 
+                        data-description="3-3.5 hours">Moving In/Out</option>
+                  </select> </div> <button type="submit" class="btn btn--blue btn-submit">Booking From  $ 389</button> </form>
+              </div>
             </div>
           </div>
         </section>
