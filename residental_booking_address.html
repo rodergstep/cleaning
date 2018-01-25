@@ -72,10 +72,67 @@
       <!-- end header -->
       <!-- begin main  -->
       <main class="main">
-        <section class="content resident-page">
+        <section class="content book-page payment-content">
           <div class="container">
             <h2 class="content__title text-center">When should we come clean?</h2>
             <p class="content__subtitle text-center">Add on extras for a cleaning upgrade.</p>
+            <div class="booking">
+              <form action="#" class="form">
+                <div class="booking__block">
+                  <div class="row">
+                    <div class="col grow"> <label class="form__label" for="form-address">Address</label> <input type="text" name="address" placeholder="2348 Massachusetts Avenue, Cambridge, Mass., United States" id="form-address" class="form__input"> </div>
+                    <div class="col col-small">
+                    <label class="form__label" for="form-artnumber">art. number</label> <input type="number" name="artnumber" id="form-artnumber" class="form__input"> </div>
+                    <div class="col form__howget"> <label class="form__label" for="form-howget">how do we get in?</label> <select id="form__howget">
+                  <option value="0"  selected="selected" >Someone is home</option>
+                  <option value="1">Someone is home</option>
+                  <option value="2">Someone is home</option>
+                </select> </div>
+                  </div>
+                </div>
+                <div class="booking__block booking__block--addons">
+                  <h5 class="booking__caption">Addons?</h5>
+                  <div class="booking__inputs">
+                    <div class="booking__addon booking__addon--remove">
+                      <div class="addon__icon"> <svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg> </div>
+                      <div class="addon__text">
+                        <p class="addon__name">Inside Fridge</p>
+                        <p class="addon__price">$35</p>
+                      </div>
+                      <div class="addon__action"> <span class="icon-action icon-remove"><span></span><span></span></span>
+                      </div>
+                    </div>
+                    <div class="booking__addon booking__addon--add">
+                      <div class="addon__icon"> <svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg> </div>
+                      <div class="addon__text">
+                        <p class="addon__name">Inside Oven</p>
+                        <p class="addon__price">$35</p>
+                      </div>
+                      <div class="addon__action"> <span class="icon-action icon-add"><span></span><span></span></span>
+                      </div>
+                    </div>
+                    <div class="booking__addon">
+                      <div class="addon__icon"> <svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg> </div>
+                      <div class="addon__text">
+                        <p class="addon__name">Inside Cabinets</p>
+                        <p class="addon__price">$35</p>
+                      </div>
+                      <div class="addon__action"> <span class="icon-action icon-add"><span></span><span></span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="booking__block">
+                  <div class="row">
+                    <div class="col"> <span class="form__label">Any pets</span>
+                      <div class="form__confirm row"> <span class="booking__value chosen confirm__btn">Yes</span> <span class="booking__value confirm__btn">No</span> </div>
+                    </div>
+                    <div class="col grow"> <label class="form__label" for="form__howgetin">how do we get in?</label> <textarea class="form__textarea" name="howgetin" id="form__howgetin" cols="30" rows="7"></textarea> </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row"> <a href="#" type="button" class="btn btn--green btn-review">Review and order</a> </div>
           </div>
         </section>
       </main>

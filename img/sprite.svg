@@ -76,6 +76,16 @@
             <path class="cls-1" d="M28.89 2.89h-3.61V1.44A1.45 1.45 0 0 0 23.83 0H9.39a1.44 1.44 0 0 0-1.44 1.44v1.45H4.33A4.35 4.35 0 0 0 0 7.22v34.67a4.34 4.34 0 0 0 4.33 4.33h24.56a4.34 4.34 0 0 0 4.33-4.33V7.22a4.35 4.35 0 0 0-4.33-4.33zm-18.06 0h11.56v2.89H10.83zm19.5 39a1.45 1.45 0 0 1-1.44 1.44H4.33a1.45 1.45 0 0 1-1.44-1.44V7.22a1.45 1.45 0 0 1 1.44-1.44h3.62v1.44a1.44 1.44 0 0 0 1.44 1.45h14.44a1.44 1.44 0 0 0 1.45-1.44V5.78h3.61a1.45 1.45 0 0 1 1.44 1.44z"/>
         </g>
     </g>
+</symbol><symbol id="icon-chevron-left" viewBox="0 0 20 20">
+    <title>
+        chevron-thin-left
+    </title>
+    <path d="M13.891 17.418c.268.272.268.709 0 .979s-.701.271-.969 0l-7.83-7.908a.697.697 0 0 1 0-.979l7.83-7.908c.268-.27.701-.27.969 0s.268.709 0 .979L6.75 10l7.141 7.418z"/>
+</symbol><symbol id="icon-chevron-right" viewBox="0 0 20 20">
+    <title>
+        chevron-thin-right
+    </title>
+    <path d="M13.25 10L6.109 2.58a.697.697 0 0 1 0-.979.68.68 0 0 1 .969 0l7.83 7.908a.697.697 0 0 1 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0s-.268-.707 0-.979L13.25 10z"/>
 </symbol><symbol id="icon-curves" viewBox="0 0 19 13">
     <image data-name="&#x201C;" width="19" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAMAAAB8UqUVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQAAAA1kLBbAAAAD3RSTlMAM6ruVbvdmRFmzHdEiCJGJ+KMAAAAAWJLR0QQlbINLAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IBFRQrCzdysXkAAABsSURBVBjTbY5LFoAwCAPTIra1Kve/rXx3spqXEAKA1ol6g87Bco6p0Eh0SMVlIJeKXQIBCtqA5OBO4H+NKztTe6pDVnXIi8TLfum5FmF7JcJu3tkPbCN/fkSVrlGZryXtrN91E5uZD6eh5OYHf1MIROH67bEAAAAASUVORK5CYII="/>
 </symbol><symbol id="icon-curves2" viewBox="0 0 19 14">
