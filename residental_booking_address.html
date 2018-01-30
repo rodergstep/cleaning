@@ -85,7 +85,7 @@
                   <div class="row">
                     <div class="col grow"> <label class="form__label" for="form-address">Address</label> <input type="text" name="address" placeholder="2348 Massachusetts Avenue, Cambridge, Mass., United States" id="form-address" class="form__input"> </div>
                     <div class="col col-small">
-                    <label class="form__label" for="form-artnumber">art. number</label> <input type="number" name="artnumber" id="form-artnumber" class="form__input"> </div>
+                    <label class="form__label" for="form-artnumber">art. number</label> <input type="text" name="artnumber" id="form-artnumber" class="form__input"> </div>
                     <div class="col form__howget"> <label class="form__label" for="form-howget">how do we get in?</label> <select id="form__howget">
                   <option value="0"  selected="selected" >Someone is home</option>
                   <option value="1">Someone is home</option>
@@ -96,39 +96,54 @@
                 <div class="booking__block booking__block--addons">
                   <h5 class="booking__caption">Addons?</h5>
                   <div class="booking__inputs">
-                    <div class="booking__addon booking__addon--remove">
-                      <div class="addon__icon"> <svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg> </div>
-                      <div class="addon__text">
-                        <p class="addon__name">Inside Fridge</p>
-                        <p class="addon__price">$35</p>
-                      </div>
-                      <div class="addon__action"> <span class="icon-action icon-remove"><span></span><span></span></span>
-                      </div>
-                    </div>
-                    <div class="booking__addon booking__addon--add">
-                      <div class="addon__icon"> <svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg> </div>
-                      <div class="addon__text">
-                        <p class="addon__name">Inside Oven</p>
-                        <p class="addon__price">$35</p>
-                      </div>
-                      <div class="addon__action"> <span class="icon-action icon-add"><span></span><span></span></span>
-                      </div>
-                    </div>
-                    <div class="booking__addon">
-                      <div class="addon__icon"> <svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg> </div>
-                      <div class="addon__text">
-                        <p class="addon__name">Inside Cabinets</p>
-                        <p class="addon__price">$35</p>
-                      </div>
-                      <div class="addon__action"> <span class="icon-action icon-add"><span></span><span></span></span>
-                      </div>
-                    </div>
+                    <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-fridge" name="addon-fridge" checked> <label for="addon-fridge">
+                    <span class="addon__icon">
+<svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg>
+</span>
+                    <span class="addon__text">
+                      <span class="addon__name">Inside Fridge</span>
+                      <span class="addon__price">$35</span>
+                    </span>
+                    <span class="addon__action">
+                      <span class="icon-action icon-remove"><span></span><span></span></span>
+                    </span>
+                  </label> </div>
+                    <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-oven" name="addon-oven"> <label for="addon-oven">
+                    <span class="addon__icon">
+<svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg>
+</span>
+                    <span class="addon__text">
+                      <span class="addon__name">Inside Oven</span>
+                      <span class="addon__price">$35</span>
+                    </span>
+                    <span class="addon__action">
+                      <span class="icon-action icon-add"><span></span><span></span></span>
+                    </span>
+                  </label> </div>
+                    <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-cabinet" name="addon-cabinet"> <label for="addon-cabinet">
+                  <span class="addon__icon">
+<svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg>
+</span>
+                  <span class="addon__text">
+                    <span class="addon__name">Inside Cabinets</span>
+                    <span class="addon__price">$35</span>
+                  </span>
+                  <span class="addon__action">
+                    <span class="icon-action icon-add"><span></span><span></span></span>
+                  </span>
+                </label> </div>
                   </div>
                 </div>
                 <div class="booking__block">
                   <div class="row">
                     <div class="col"> <span class="form__label">Any pets</span>
-                      <div class="form__confirm row"> <span class="booking__value chosen confirm__btn">Yes</span> <span class="booking__value confirm__btn">No</span> </div>
+                      <div class="form__confirm row"> <span class="booking__value confirm__btn">
+                    <input type="radio" id="confirm-pets-yes" name="confirm-pets-group">
+                    <label for="confirm-pets-yes">Yes</label>
+                  </span> <span class="booking__value confirm__btn">
+                    <input type="radio" id="confirm-pets-no" name="confirm-pets-group">
+                    <label for="confirm-pets-no">No</label>
+                  </span> </div>
                     </div>
                     <div class="col grow"> <label class="form__label" for="form__howgetin">how do we get in?</label> <textarea class="form__textarea" name="howgetin" id="form__howgetin" cols="30" rows="7"></textarea> </div>
                   </div>
@@ -189,6 +204,8 @@
     </div>
     <!-- END WRAPPPER -->
     <!-- BEGIN scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Main JS -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>
