@@ -1,0 +1,48 @@
+{% extends "layouts/_layout.html" %} {% block content %}
+
+<!-- begin header  -->
+{% include "partials/_header.html" %}
+<!-- end header -->
+
+<!-- begin main  -->
+<main class="main">
+  <section class="content contact-content">
+    <div class="container">
+      <h2 class="content__title">Contact Us</h2>
+
+      <div class="content__text">
+        <ul class="contact">
+          <li class="contact__item">
+            <span class="contact__icon">{{mixins.icon('marker')}}</span>
+            <p class="contact__item-text">469 7th Avenue, New York, NY 10018</p>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon">{{mixins.icon('phone')}}</span>
+            <a href="tel:(347) 896-2580" class="contact__item-text">(347) 896-2580</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon">{{mixins.icon('mail')}}</span>
+            <a href="mailto:info@cleaning-master.com" class="contact__item-text">info@cleaning-master.com</a>
+          </li>
+        </ul>
+        <h5 class="paragraph__title">We’ll get back to you as soon as we can and we’re prompt!</h5>
+        <p class="paragraph">If you call during our business hours you’ll get through to us instantly. If you email, we’ll usually get back to you within the same business day. Our client services team members are eager to answer all of your cleaning services questions.</p>
+        <h5 class="paragraph__title">Hours</h5>
+        <ul>
+          <li>Monday - Friday 8am-8pm</li>
+          <li>Saturday 8am-6pm</li>
+          <li>Sunday 8am-2pm</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+<!-- end main -->
+
+<!-- begin footer  -->
+{% include "partials/_footer.html" %}
+<!-- end footer -->
+
+{% endblock %}

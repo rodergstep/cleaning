@@ -1,0 +1,51 @@
+{% extends "layouts/_layout.html" %} {% block content %}
+
+<!-- begin header  -->
+{% include "partials/_header.html" %}
+<!-- end header -->
+
+<!-- begin main  -->
+<main class="main">
+  <section class="content faq-content">
+    <div class="container">
+      <h2 class="content__title text-center">Questions? Look here.</h2>
+      <p class="content__subtitle">Can't find an answer? Call us at (347) 896-2580 or email: info@cleaning-master.com</p>
+      <div class="content__text">
+        <ul class="accordion">
+          <li>
+            <a class="accordion__tab">How many people come to clean?</a>
+            <p>It depends on our schedule and the type of cleaning you need - anywhere from 1 person to 2 people. The minimum of work hours for one person is 2 hours. So if it`s less than 6 hours we`ll send just one person.</p>
+          </li>
+          <li>
+            <a class="accordion__tab">Some Services charge extra for pets - is there a pet fee?</a>
+            <p>We decided that since not ALL pets shed badly we will waive the pet fee. If you have any pets that do shed and your place is extra hairy, it will require more time to do a thorough cleaning.</p>
+          </li>
+          <li>
+            <a class="accordion__tab">What supplies do I need to provide?</a>
+            <p>Your only responsibility is a mop, a bucket, a broom, a step stool or ladder if you have high ceilings. And if you have a pet or carpeting you should also supply a working vacuum cleaner.</p>
+          </li>
+
+          <li>
+            <a class="accordion__tab">Can you clean special items, or special areas in my home?</a>
+            <p>We can clean anything - we never charge by the task or the job - we only charge a regular hourly rate- so choose how much you want us to get done, and we'll help you create a plan!.</p>
+          </li>
+          <li>
+            <a class="accordion__tab">What is included in the cleaning?</a>
+            <p>Most people want a general outside surface cleaning and sanitizing of their home, which includes all kitchen and bathroom surfaces wiped and sanitized, furniture dusted, rooms picked up and tidied, floors swept, moped or vacuumed if you have
+              a vacuum cleaner, linens changed, beds made if you'd like. We will do the inside of the microwave as well. If your home is larger you can purchase additional time for more rooms. If it`s a deep cleaning we`ll do inside the fridge and freezer,
+              clean the oven, organize closets and cabinets, wash windows, blinds and baseboards. It's all according to what time allows and how much time you purchase.</p>
+          </li>
+        </ul>
+        <!-- / accordion -->
+      </div>
+
+    </div>
+  </section>
+</main>
+<!-- end main -->
+
+<!-- begin footer  -->
+{% include "partials/_footer.html" %}
+<!-- end footer -->
+
+{% endblock %}

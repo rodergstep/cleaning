@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/iconmoon/icomoon.eot?at5zra');
+  src: url('../../fonts/iconmoon/icomoon.eot?at5zra#iefix') format('embedded-opentype'), url('../../fonts/iconmoon/icomoon.ttf?at5zra') format('truetype'), url('../../fonts/iconmoon/icomoon.woff?at5zra') format('woff'), url('../../fonts/iconmoon/icomoon.svg?at5zra#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cc-diners:before {
+  content: "\e900";
+}
+
+.icon-cc-amex:before {
+  content: "\e901";
+}
+
+.icon-cc-jcb:before {
+  content: "\e902";
+}
+
+.icon-cc-visa:before {
+  content: "\e903";
+}
+
+.icon-cc-mastercard:before {
+  content: "\e904";
+}
+
+.icon-cc-discover:before {
+  content: "\e905";
+}
+
+.icon-chevron-thin-right:before {
+  content: "\e906";
+}
+
+.icon-chevron-thin-left:before {
+  content: "\e907";
+}

@@ -58,5 +58,10 @@
     "through2": "^2.0.1",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^1.5.3"
+  },
+  "dependencies": {
+    "cleave.js": "^1.1.1",
+    "datepickk": "^1.4.1",
+    "wowjs": "^1.1.3"
   }
 }

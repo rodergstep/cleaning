@@ -1,0 +1,86 @@
+.select_mate {
+  position: relative;
+  width: 300px;
+  min-height: 60px;
+  font-family: $font-primary;
+  color: #1c1c1c;
+  background-color: #fff;
+  transition: all 275ms ease-in-out;
+  select {
+    position: absolute;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.cont_list_select_mate {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.cont_select_int {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+  transition: all 275ms ease-in-out;
+  li {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #E0E0E0;
+    background-color: #ffffff;
+    list-style-type: none;
+    padding: 10px 2% 10px 24px;
+    margin: 0px;
+    transition: all 275ms ease-in-out;
+    display: block;
+    cursor: pointer;
+    &:last-child {
+      border-radius: 3px;
+      border-bottom: 0px;
+    }
+    &:hover {
+      background-color: #f5f6f6;
+      ;
+    }
+  }
+  .active {
+    background-color: #f5f6f6;
+    ;
+  }
+}
+
+.option__choosed {
+  padding: 20px 2% 20px 24px;
+  width: 96%;
+  display: block;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.icon_select_mate {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  margin: auto;
+  right: 20px;
+  transition: all 275ms;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 4.5px 0 4.5px;
+  border-color: #898989 transparent transparent transparent;
+}

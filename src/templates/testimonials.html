@@ -1,0 +1,149 @@
+{% extends "layouts/_layout.html" %} {% block content %}
+
+<!-- begin header  -->
+{% include "partials/_header.html" %}
+<!-- end header -->
+
+<!-- begin main  -->
+<main class="main testi-content">
+  <section class="content">
+    <div class="container">
+      <h2 class="content__title text-center">Testimonials</h2>
+      <div class="content__text">
+        <div class="testi__row">
+          <div class="slider__item">
+            <div class="slider__stars">
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star slider__star--empty">{{mixins.icon('star')}}</span>
+            </div>
+            <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas
+              neque, eu hendrerit lacus.
+              <span class="feedback__curves feedback__curves--end">{{mixins.icon('curves')}}</span>
+              <span class="feedback__curves feedback__curves--begin">{{mixins.icon('curves')}}</span></p>
+            <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__stars">
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star slider__star--empty">{{mixins.icon('star')}}</span>
+            </div>
+            <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas
+              neque, eu hendrerit lacus.
+              <span class="feedback__curves feedback__curves--end">{{mixins.icon('curves')}}</span>
+              <span class="feedback__curves feedback__curves--begin">{{mixins.icon('curves')}}</span></p>
+            <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__stars">
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star slider__star--empty">{{mixins.icon('star')}}</span>
+            </div>
+            <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas
+              neque, eu hendrerit lacus.
+              <span class="feedback__curves feedback__curves--end">{{mixins.icon('curves')}}</span>
+              <span class="feedback__curves feedback__curves--begin">{{mixins.icon('curves')}}</span></p>
+            <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__stars">
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star slider__star--empty">{{mixins.icon('star')}}</span>
+            </div>
+            <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas
+              neque, eu hendrerit lacus.
+              <span class="feedback__curves feedback__curves--end">{{mixins.icon('curves')}}</span>
+              <span class="feedback__curves feedback__curves--begin">{{mixins.icon('curves')}}</span></p>
+            <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+          </div>
+        </div>
+        <a href="#" type="button" class="btn btn--blue btn-reviews">See All Review</a>
+      </div>
+    </div>
+    <div class="pagination">
+      <div class="pagination__item">Previous</div>
+      <div class="pagination__item is-active">1</div>
+      <div class="pagination__item">2</div>
+      <div class="pagination__item">Next</div>
+    </div>
+  </section>
+  <div class="form-wrap">
+    <div class="container">
+      <h3 class="content__title text-center">We value your feedback</h3>
+      <form action="#" class="form">
+        <div class="row">
+          <div class="col">
+            <label class="form__label" for="form-address">Name</label>
+            <input type="text" name="name" id="form-name" class="form__input">
+          </div>
+          <div class="col">
+            <label class="form__label" for="form-email">Email</label>
+            <input type="email" name="email" id="form-email" class="form__input">
+          </div>
+        </div>
+        <div class="row flex-start">
+          <div class="col">
+            <label class="form__label" for="form-city">City</label>
+            <input type="text" name="city" id="form-city" class="form__input">
+          </div>
+          <div class="col">
+            <label class="form__label" for="form-city">Estimate</label>
+            <div class="stars" data-stars="1">
+              <svg height="50" width="46" class="star rating" data-rating="1">
+                  <polygon points="19.8, 2.2, 6.6, 43.56, 39.6, 17.16, 0, 17.16, 33, 43.56" style="fill-rule:nonzero;"/>
+                </svg>
+              <svg height="50" width="46" class="star rating" data-rating="2">
+                 <polygon points="19.8, 2.2, 6.6, 43.56, 39.6, 17.16, 0, 17.16, 33, 43.56" style="fill-rule:nonzero;"/>
+                </svg>
+              <svg height="50" width="46" class="star rating" data-rating="3">
+                 <polygon points="19.8, 2.2, 6.6, 43.56, 39.6, 17.16, 0, 17.16, 33, 43.56" style="fill-rule:nonzero;"/>
+                </svg>
+              <svg height="50" width="46" class="star rating" data-rating="4">
+                 <polygon points="19.8, 2.2, 6.6, 43.56, 39.6, 17.16, 0, 17.16, 33, 43.56" style="fill-rule:nonzero;"/>
+                </svg>
+              <svg height="50" width="46" class="star rating" data-rating="5">
+                 <polygon points="19.8, 2.2, 6.6, 43.56, 39.6, 17.16, 0, 17.16, 33, 43.56" style="fill-rule:nonzero;"/>
+                </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row flex-start">
+          <div class="col grow">
+            <label class="form__label" for="form-review">Review</label>
+            <textarea class="form__input form__textarea" name="review" id="form-review"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label class="form__label" for="form-review">Captcha</label>
+          </div>
+        </div>
+        <div class="row">
+          <a href="#" type="submit" class="btn btn--green btn-send">Send</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</main>
+<!-- end main -->
+
+<!-- begin footer  -->
+{% include "partials/_footer.html" %}
+<!-- end footer -->
+
+{% endblock %}

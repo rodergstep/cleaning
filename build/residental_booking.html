@@ -82,75 +82,80 @@
               <div class="booking__block">
                 <h5 class="booking__caption">NUMBER OF Bedrooms</h5>
                 <div class="booking__inputs">
-                  <div class="booking__value chosen">Studio</div>
-                  <div class="booking__value">1</div>
-                  <div class="booking__value">2</div>
-                  <div class="booking__value">3</div>
-                  <div class="booking__value">4</div>
-                  <div class="booking__value">5</div>
+                  <div class="booking__value"> <input type="radio" id="room-bedroom-0" name="room-bedroom-group" checked> <label for="room-bedroom-0">Studio</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bedroom-1" name="room-bedroom-group"> <label for="room-bedroom-1">1</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bedroom-2" name="room-bedroom-group"> <label for="room-bedroom-2">2</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bedroom-3" name="room-bedroom-group"> <label for="room-bedroom-3">3</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bedroom-4" name="room-bedroom-group"> <label for="room-bedroom-4">4</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bedroom-5" name="room-bedroom-group"> <label for="room-bedroom-5">5</label> </div>
                 </div>
               </div>
               <div class="booking__block">
                 <h5 class="booking__caption">NUMBER OF Bathrooms</h5>
                 <div class="booking__inputs">
-                  <div class="booking__value">1</div>
-                  <div class="booking__value">2</div>
-                  <div class="booking__value">3</div>
-                  <div class="booking__value">4</div>
-                  <div class="booking__value">5</div>
+                  <div class="booking__value"> <input type="radio" id="room-bathroom-1" name="room-bathroom-group" checked> <label for="room-bathroom-1">1</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bathroom-2" name="room-bathroom-group"> <label for="room-bathroom-2">2</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bathroom-3" name="room-bathroom-group"> <label for="room-bathroom-3">3</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bathroom-4" name="room-bathroom-group"> <label for="room-bathroom-4">4</label> </div>
+                  <div class="booking__value"> <input type="radio" id="room-bathroom-5" name="room-bathroom-group"> <label for="room-bathroom-5">5</label> </div>
                 </div>
               </div>
               <div class="booking__block">
                 <h5 class="booking__caption">Clean type</h5>
                 <div class="booking__inputs">
-                  <div class="booking__value">
-                    <p class="value__name">Standart</p>
-                    <p class="value__desc">∽ 2hours</p>
-                  </div>
-                  <div class="booking__value">
-                    <p class="value__name">Standart Plus</p>
-                    <p class="value__desc">2,5 - 3 hours</p>
-                  </div>
-                  <div class="booking__value">
-                    <p class="value__name">Deep Clean</p>
-                    <p class="value__desc">4,5 - 5 hours</p>
-                  </div>
-                  <div class="booking__value">
-                    <p class="value__name">Moving In/Out</p>
-                    <p class="value__desc">4,5 - 5 hours</p>
-                  </div>
+                  <div class="booking__value"> <input type="radio" id="plan-standart" name="room-plan-group" checked> <label for="plan-standart">
+                <span class="value__name">Basic Cleaning</span>
+                <span class="value__desc">∽ 2hours</span>
+              </label> </div>
+                  <div class="booking__value"> <input type="radio" id="plan-deep" name="room-plan-group"> <label for="plan-deep">
+                <span class="value__name">Deep Cleaning</span>
+                <span class="value__desc">4,5 - 5 hours</span>
+              </label> </div>
+                  <div class="booking__value"> <input type="radio" id="plan-moving" name="room-plan-group"> <label for="plan-moving">
+                <span class="value__name">Moving In/Out Cleaning</span>
+                <span class="value__desc">4,5 - 5 hours</span>
+              </label> </div>
                 </div>
               </div>
               <div class="booking__block booking__block--addons">
                 <h5 class="booking__caption">Addons?</h5>
                 <div class="booking__inputs">
-                  <div class="booking__addon booking__addon--remove">
-                    <div class="addon__icon"> <svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg> </div>
-                    <div class="addon__text">
-                      <p class="addon__name">Inside Fridge</p>
-                      <p class="addon__price">$35</p>
-                    </div>
-                    <div class="addon__action"> <span class="icon-action icon-remove"><span></span><span></span></span>
-                    </div>
-                  </div>
-                  <div class="booking__addon booking__addon--add">
-                    <div class="addon__icon"> <svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg> </div>
-                    <div class="addon__text">
-                      <p class="addon__name">Inside Oven</p>
-                      <p class="addon__price">$35</p>
-                    </div>
-                    <div class="addon__action"> <span class="icon-action icon-add"><span></span><span></span></span>
-                    </div>
-                  </div>
-                  <div class="booking__addon">
-                    <div class="addon__icon"> <svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg> </div>
-                    <div class="addon__text">
-                      <p class="addon__name">Inside Cabinets</p>
-                      <p class="addon__price">$35</p>
-                    </div>
-                    <div class="addon__action"> <span class="icon-action icon-add"><span></span><span></span></span>
-                    </div>
-                  </div>
+                  <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-fridge" name="addon-fridge" checked> <label for="addon-fridge">
+                <span class="addon__icon">
+<svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg>
+</span>
+                <span class="addon__text">
+                  <span class="addon__name">Inside Fridge</span>
+                  <span class="addon__price">$35</span>
+                </span>
+                <span class="addon__action">
+                  <span class="icon-action icon-remove"><span></span><span></span></span>
+                </span>
+              </label> </div>
+                  <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-oven" name="addon-oven"> <label for="addon-oven">
+                <span class="addon__icon">
+<svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg>
+</span>
+                <span class="addon__text">
+                  <span class="addon__name">Inside Oven</span>
+                  <span class="addon__price">$35</span>
+                </span>
+                <span class="addon__action">
+                  <span class="icon-action icon-add"><span></span><span></span></span>
+                </span>
+              </label> </div>
+                  <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-cabinet" name="addon-cabinet"> <label for="addon-cabinet">
+              <span class="addon__icon">
+<svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg>
+</span>
+              <span class="addon__text">
+                <span class="addon__name">Inside Cabinets</span>
+                <span class="addon__price">$35</span>
+              </span>
+              <span class="addon__action">
+                <span class="icon-action icon-add"><span></span><span></span></span>
+              </span>
+            </label> </div>
                 </div>
               </div>
             </div>
@@ -208,6 +213,8 @@
     </div>
     <!-- END WRAPPPER -->
     <!-- BEGIN scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Main JS -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>

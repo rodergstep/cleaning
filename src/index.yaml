@@ -1,0 +1,29 @@
+ProjectTitle: Cleaning Master
+
+PageList:
+- file: page.html
+  ready: 100
+- file: residental_booking.html
+  ready: 100
+- file: residental_booking_address.html
+  ready: 100
+- file: residental_booking_schedule.html
+  ready: 100
+- file: residental_booking_time.html
+  ready: 100
+- file: residental_almost.html
+  ready: 100
+- file: about.html
+  ready: 100
+- file: contact_us.html
+  ready: 100
+- file: faq.html
+  ready: 100
+- file: partners.html
+  ready: 100
+- file: services.html
+  ready: 100
+- file: thanks.html
+  ready: 100
+- file: testionials.html
+  ready: 100

@@ -1,0 +1,343 @@
+{% extends "layouts/_layout.html" %} {% block content %}
+
+<!-- begin header  -->
+{% include "partials/_header.html" %}
+<!-- end header -->
+
+<!-- begin main  -->
+<main class="main">
+
+  <!-- begin hero  -->
+  <div class="hero" style="background-image: url(img/hero-bg.jpg)">
+    <div class="container">
+      <div class="row hero__row">
+        <div class="hero__heading wow fadeInLeft" data-wow-duration="0.7s">
+          <h1 class="hero__title"><span>A tradition of</span> quality cleaning</h1>
+          <h4 class="hero__subtitle">Every project is different. Every client is special.</h4>
+        </div>
+        <div class="hero__book wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">
+          <form action="#" class="form">
+            <select id="select-city">
+              <option value="0" selected="selected">NYC</option>
+              <option value="1">CHI</option>
+              <option value="2">LA</option>
+            </select>
+
+            <select id="select-apartments">
+              <option value="0" selected="selected">Studio</option>
+              <option value="1">1 Bedroom</option>
+              <option value="2">2 Bedroom</option>
+              <option value="3">3 Bedroom</option>
+            </select>
+
+            <select id="select-bathrooms">
+              <option value="0" selected="selected">1 Bathroom</option>
+              <option value="1">2 Bathroom</option>
+              <option value="2">3 Bathroom</option>
+              <option value="3">4 Bathroom</option>
+            </select>
+
+            <select id="select-plan">
+              <option value="0"  selected="selected" 
+                  data-description="∽ 2hours">Standart</option>
+              <option value="1" 
+                  data-description="3-3.5 hours">Standart Plus</option>
+              <option value="2"
+                  data-description="3-3.5 hours">Deep Clean</option>
+              <option value="3" 
+                  data-description="3-3.5 hours">Moving In/Out</option>
+            </select>
+            <button type="submit" class="btn btn--blue btn-submit">Booking From  $ 389</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end hero -->
+
+  <section class="content about_us-content">
+    <div class="container">
+      <div class="row flex-start">
+        <div class="col wow fadeInUp">
+          <h2 class="section__title underlined">About</h2>
+        </div>
+        <div class="col  wow fadeInUp" data-wow-delay="0.5s">
+          <div class="paragraph"><span class="text-bold">Cleaning Master</span> is a residential and commercial cleaning services that provide professional service and affordable price. We do: - a weekly, bi-weekly, monthly or one-time cleaning, - a basic and a deep cleaning,
+            detailed move-out/move-in cleaning, - we provide cleaning supplies.</div>
+          <div class="paragraph"><span class="text-bold">Cleaning Master</span> service was established in 2012 with a clear mission: to provide a professional cleaning service in a friendly, honest and reliable manner which not just satisfies but delights our customers! With
+            a deep cleaning, we clean the windows, inside the refrigerator and oven, blinds, light fixtures and baseboard through the house. It's a very extensive cleaning that will leave your house spotless. Whether you're moving in or out, <span class="text-bold">Cleaning Master</span>            can be there to help to get your old or new home looking spotless.</div>
+          <a href="#" type="button" class="btn btn--green">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content benefits-content">
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <p class="benefits__moto">Get your day back. It’s easy</p>
+      </div>
+    </div>
+    <div class="benefits__box wow fadeInUp" data-wow-delay="0.5s">
+      <div class="benefits__item">
+        <div class="benefits__icon"><span class="benefits__icon-bg">{{mixins.icon('certification')}}</span></div>
+        <p class="benefits__name">Certification</p>
+        <p class="benefits__desc">Cleaners certified & highly experienced professionals.</p>
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__icon"><span class="benefits__icon-bg">{{mixins.icon('fair')}}</span></div>
+        <p class="benefits__name">Fair Prices</p>
+        <p class="benefits__desc">We aren’t cheapest, but we won’t ruin your wallet.</p>
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__icon"><span class="benefits__icon-bg">{{mixins.icon('staff')}}</span></div>
+        <p class="benefits__name">Professional Staff</p>
+        <p class="benefits__desc">We are professional and <br> experienced cleaning staff.</p>
+      </div>
+      <div class="benefits__item">
+        <div class="benefits__icon"><span class="benefits__icon-bg">{{mixins.icon('twenty-four')}}</span></div>
+        <p class="benefits__name">24/7 Opened</p>
+        <p class="benefits__desc">We work hard so you <br> don’t have to.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content reviews-content">
+    <div class="container">
+      <div class="row reviews__row">
+        <div class="reviews__slider wow zoomIn" id="reviews__slider">
+          <div class="slider__item">
+            <div class="slider__stars">
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star slider__star--empty">{{mixins.icon('star')}}</span>
+            </div>
+            <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas
+              neque, eu hendrerit lacus.
+              <span class="feedback__curves feedback__curves--end">{{mixins.icon('curves')}}</span>
+              <span class="feedback__curves feedback__curves--begin">{{mixins.icon('curves')}}</span></p>
+            <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+          </div>
+          <div class="slider__item">
+            <div class="slider__stars">
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star slider__star--empty">{{mixins.icon('star')}}</span>
+            </div>
+            <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas
+              neque, eu hendrerit lacus.
+              <span class="feedback__curves feedback__curves--end">{{mixins.icon('curves')}}</span>
+              <span class="feedback__curves feedback__curves--begin">{{mixins.icon('curves')}}</span></p>
+            <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+          </div>
+          <div class="slider__item">
+            <div class="slider__stars">
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star">{{mixins.icon('star')}}</span>
+              <span class="slider__star slider__star--empty">{{mixins.icon('star')}}</span>
+            </div>
+            <p class="slider__feedback">Sed nec blandit nibh. Pellentesque commodo suscipit gravida. Sed sit amet ex sed mi dignissim elementum in ut quam. Vivamus laoreet non mauris eget mattis. Nam turpis orci, consectetur vel accumsan sed, condimentum at sapien. Nunc ut egestas
+              neque, eu hendrerit lacus.
+              <span class="feedback__curves feedback__curves--end">{{mixins.icon('curves')}}</span>
+              <span class="feedback__curves feedback__curves--begin">{{mixins.icon('curves')}}</span></p>
+            <p class="feedback__author"><span>Grace Hall ,</span> Designer New York</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" type="button" class="btn btn--blue btn-reviews">See All or Write a Review</a>
+    </div>
+  </section>
+
+
+  <section class="content pricing-content">
+    <div class="container">
+      <h2 class="section__title text-center">Pricing pricings</h2>
+      <div class="row">
+        <p class="paragraph pricing__desc text-center">In elementum? Turpis adipiscing porta a ut amet, aenean adipiscing. Integer egestas? Proin in placerat et nisi penatibus, lorem? Parturient. Penatibus, sociis habitasse? Est dignissim et, ridiculus adipiscing sit facilisis</p>
+      </div>
+      <div class="pricig-row">
+        <div class="pricing-table wow fadeInUp" data-wow-delay="0.0s">
+          <div class="pricing">
+            <div class="pricing__head">
+              <span class="dollar">$</span>
+              <p class="pricing__price">90</p>
+            </div>
+            <div class="pricing__body">
+              <p class="pricing__name"><span class="text-bold">Standart</span> Cleaning</p>
+              <ul class="pricing__list">
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 01</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 02</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 03</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 04</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('cancel-green')}}</span>
+                  <p class="pricing__feature">Feature 05</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" type="button" class="btn btn--empty">Order Now</a>
+        </div>
+        <div class="pricing-table wow fadeInUp" data-wow-delay="0.5s">
+          <div class="pricing">
+            <div class="pricing__head">
+              <span class="dollar">$</span>
+              <p class="pricing__price">120</p>
+            </div>
+            <div class="pricing__body">
+              <p class="pricing__name"><span class="text-bold">Deep</span> Cleaning</p>
+              <ul class="pricing__list">
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 01</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 02</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 03</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 04</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('cancel-green')}}</span>
+                  <p class="pricing__feature">Feature 05</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" type="button" class="btn btn--empty">Order Now</a>
+        </div>
+        <div class="pricing-table wow fadeInUp" data-wow-delay="1s">
+          <div class="pricing">
+            <div class="pricing__head">
+              <span class="dollar">$</span>
+              <p class="pricing__price">250</p>
+            </div>
+            <div class="pricing__body">
+              <p class="pricing__name"><span class="text-bold">Move-In/</span><span class="text-bold"> Move-Out </span> Cleaning</p>
+              <ul class="pricing__list">
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 01</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 02</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 03</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('tick-green')}}</span>
+                  <p class="pricing__feature">Feature 04</p>
+                </li>
+                <li class="pricing__list-item">
+                  <span class="pricing__icon">{{mixins.icon('cancel-green')}}</span>
+                  <p class="pricing__feature">Feature 05</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" type="button" class="btn btn--empty">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hiring-content">
+    <div class="container">
+      <div class="row hiring__row">
+        <div class="col-left">
+          <div class="hiring__text wow fadeInLeft">
+            <h2 class="section__title">We're Hiring!</h2>
+            <p class="paragraph">Interested in working with us? Learn more about our process, benefits, and flexible scheduling</p>
+            <a href="#" type="button" class="btn btn--green">Apply now</a>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="hiring__video wow fadeInRight">
+            <div class="video">
+              <iframe width="630" height="353" class="video__frame" src="https://www.youtube.com/embed/kNOQ3VRCUlw" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content sign-content">
+    <div class="container">
+      <h2 class="section__title text-center">Ready for more ‘you’ time? <br> Sign up today.</h2>
+      <div class="row">
+        <div class="sign__book">
+          <form action="#" class="form">
+            <div class="form__inputs">
+              <select id="select-city--bt">
+                    <option value="0" selected="selected">NYC</option>
+                    <option value="1">CHI</option>
+                    <option value="2">LA</option>
+                  </select>
+
+              <select id="select-apartments--bt">
+                    <option value="0" selected="selected">Studio</option>
+                    <option value="1">1 Bedroom</option>
+                    <option value="2">2 Bedroom</option>
+                    <option value="3">3 Bedroom</option>
+                  </select>
+
+              <select id="select-bathrooms--bt">
+                    <option value="0" selected="selected">1 Bathroom</option>
+                    <option value="1">2 Bathroom</option>
+                    <option value="2">3 Bathroom</option>
+                    <option value="3">4 Bathroom</option>
+                  </select>
+
+              <select id="select-plan--bt">
+                    <option value="0"  selected="selected" 
+                        data-description="∽ 2hours">Standart</option>
+                    <option value="1" 
+                        data-description="3-3.5 hours">Standart Plus</option>
+                    <option value="2"
+                        data-description="3-3.5 hours">Deep Clean</option>
+                    <option value="3" 
+                        data-description="3-3.5 hours">Moving In/Out</option>
+                  </select>
+            </div>
+            <button type="submit" class="btn btn--blue btn-submit">Booking From  $ 389</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- end main -->
+
+<!-- begin footer  -->
+{% include "partials/_footer.html" %}
+<!-- end footer -->
+
+{% endblock %}

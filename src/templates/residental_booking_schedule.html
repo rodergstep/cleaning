@@ -1,0 +1,29 @@
+{% extends "layouts/_layout.html" %} {% block content %}
+
+<!-- begin header  -->
+{% include "partials/_header-resident.html" %}
+<!-- end header -->
+
+<!-- begin main  -->
+<main class="main">
+  <section class="content resident-page">
+    <div class="container">
+      <h2 class="content__title text-center">When should we come clean?</h2>
+    </div>
+    <div class="container">
+      <div id="datepickker"></div>
+    </div>
+
+    <div class="row">
+      <a href="residental_booking_time.html" type="button" class="btn btn--green btn-next">Next</a>
+    </div>
+
+  </section>
+</main>
+<!-- end main -->
+
+<!-- begin footer  -->
+{% include "partials/_footer.html" %}
+<!-- end footer -->
+
+{% endblock %}

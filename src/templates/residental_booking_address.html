@@ -1,0 +1,116 @@
+{% extends "layouts/_layout.html" %} {% block content %}
+
+<!-- begin header  -->
+{% include "partials/_header-resident.html" %}
+<!-- end header -->
+
+<!-- begin main  -->
+<main class="main">
+  <section class="content book-page payment-content">
+    <div class="container">
+      <h2 class="content__title text-center">When should we come clean?</h2>
+      <p class="content__subtitle text-center">Add on extras for a cleaning upgrade.</p>
+      <div class="booking">
+        <form action="#" class="form">
+          <div class="booking__block">
+            <div class="row">
+              <div class="col grow">
+                <label class="form__label" for="form-address">Address</label>
+                <input type="text" name="address" placeholder="2348 Massachusetts Avenue, Cambridge, Mass., United States" id="form-address" class="form__input">
+              </div>
+              <div class="col col-small">
+                <label class="form__label" for="form-artnumber">art. number</label>
+                <input type="text" name="artnumber" id="form-artnumber" class="form__input">
+              </div>
+              <div class="col form__howget">
+                <label class="form__label" for="form-howget">how do we get in?</label>
+                <select id="form__howget">
+                  <option value="0"  selected="selected" >Someone is home</option>
+                  <option value="1">Someone is home</option>
+                  <option value="2">Someone is home</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking__block booking__block--addons">
+            <h5 class="booking__caption">Addons?</h5>
+            <div class="booking__inputs">
+              <div class="booking__addon">
+                <input type="checkbox" class="addon-checkbox" id="addon-fridge" name="addon-fridge" checked>
+                <label for="addon-fridge">
+                    <span class="addon__icon">{{mixins.icon('fridge')}}</span>
+                    <span class="addon__text">
+                      <span class="addon__name">Inside Fridge</span>
+                      <span class="addon__price">$35</span>
+                    </span>
+                    <span class="addon__action">
+                      <span class="icon-action icon-remove"><span></span><span></span></span>
+                    </span>
+                  </label>
+              </div>
+              <div class="booking__addon">
+                <input type="checkbox" class="addon-checkbox" id="addon-oven" name="addon-oven">
+                <label for="addon-oven">
+                    <span class="addon__icon">{{mixins.icon('grave')}}</span>
+                    <span class="addon__text">
+                      <span class="addon__name">Inside Oven</span>
+                      <span class="addon__price">$35</span>
+                    </span>
+                    <span class="addon__action">
+                      <span class="icon-action icon-add"><span></span><span></span></span>
+                    </span>
+                  </label>
+              </div>
+              <div class="booking__addon">
+                <input type="checkbox" class="addon-checkbox" id="addon-cabinet" name="addon-cabinet">
+                <label for="addon-cabinet">
+                  <span class="addon__icon">{{mixins.icon('wardrobe')}}</span>
+                  <span class="addon__text">
+                    <span class="addon__name">Inside Cabinets</span>
+                    <span class="addon__price">$35</span>
+                  </span>
+                  <span class="addon__action">
+                    <span class="icon-action icon-add"><span></span><span></span></span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="booking__block">
+            <div class="row">
+              <div class="col">
+                <span class="form__label">Any pets</span>
+                <div class="form__confirm row">
+                  <span class="booking__value confirm__btn">
+                    <input type="radio" id="confirm-pets-yes" name="confirm-pets-group">
+                    <label for="confirm-pets-yes">Yes</label>
+                  </span>
+                  <span class="booking__value confirm__btn">
+                    <input type="radio" id="confirm-pets-no" name="confirm-pets-group">
+                    <label for="confirm-pets-no">No</label>
+                  </span>
+                </div>
+              </div>
+              <div class="col grow">
+                <label class="form__label" for="form__howgetin">how do we get in?</label>
+                <textarea class="form__textarea" name="howgetin" id="form__howgetin" cols="30" rows="7"></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <a href="residental_almost.html" type="button" class="btn btn--green btn-review">Review and order</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+<!-- end main -->
+
+<!-- begin footer  -->
+{% include "partials/_footer.html" %}
+<!-- end footer -->
+
+{% endblock %}

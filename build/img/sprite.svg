@@ -4,6 +4,10 @@
         </style>
     
         <style>
+            .cls-1{fill:#283144}
+        </style>
+    
+        <style>
             .cls-1{fill:#fff}
         </style>
     
@@ -91,10 +95,14 @@
         chevron-thin-right
     </title>
     <path d="M13.25 10L6.109 2.58a.697.697 0 0 1 0-.979.68.68 0 0 1 .969 0l7.83 7.908a.697.697 0 0 1 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0s-.268-.707 0-.979L13.25 10z"/>
-</symbol><symbol id="icon-curves" viewBox="0 0 19 13">
-    <image data-name="&#x201C;" width="19" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAMAAAB8UqUVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQAAAA1kLBbAAAAD3RSTlMAM6ruVbvdmRFmzHdEiCJGJ+KMAAAAAWJLR0QQlbINLAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IBFRQrCzdysXkAAABsSURBVBjTbY5LFoAwCAPTIra1Kve/rXx3spqXEAKA1ol6g87Bco6p0Eh0SMVlIJeKXQIBCtqA5OBO4H+NKztTe6pDVnXIi8TLfum5FmF7JcJu3tkPbCN/fkSVrlGZryXtrN91E5uZD6eh5OYHf1MIROH67bEAAAAASUVORK5CYII="/>
-</symbol><symbol id="icon-curves2" viewBox="0 0 19 14">
-    <image data-name="&#x201C;" width="19" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOBAMAAAA/Njq6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQoMUQAAACp22gcAAAADnRSTlMAEXczRIjdIu6ZVaq7ZtZBsTAAAAABYktHRA8YugDZAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gEVFCsLN3KxeQAAAIRJREFUCNcljr8JAnEMRt/pgSgWYmV53ACiVpaCe9jYH05yOIE4gSOIEziChX9OBXkz+AtX5MtLwpcEGJcFLMoVsLEgq9xB7mdE329qTkJPPhOefZPVXmCge4Z6jLlbblEz1YZK73BV5yl+La5bPKREbWxc6isMD+hW6W6nbuKFXkg+gz+NlkFHSgXI8gAAAABJRU5ErkJggg=="/>
+</symbol><symbol id="icon-curves" viewBox="0 0 17.83 12.79">
+    
+    <title>
+        curves
+    </title>
+    <g id="Layer_2" data-name="Layer 2">
+        <path class="cls-1" d="M6 5.48a3.82 3.82 0 0 1 1.7 3.28 3.84 3.84 0 0 1-3.91 4 3.83 3.83 0 0 1-3.79-4 5.76 5.76 0 0 1 1.13-3.34L4.73 0h3.71zm9.39 0a3.82 3.82 0 0 1 1.7 3.28 3.88 3.88 0 1 1-7.75 0 5.76 5.76 0 0 1 1.13-3.34L14.11 0h3.72z" id="Layer_1-2" data-name="Layer 1"/>
+    </g>
 </symbol><symbol id="icon-facebook" viewBox="0 0 29.83 53.55">
     
     <title>

@@ -32,8 +32,7 @@
           <img src="img/logo.png" alt="Cleaning Master">
         </a> </div>
             <div class="header__right row" id="header__right">
-              <nav class="nav"> <a href="services.html" class="nav__item">Services</a> <a href="residental_booking.html" class="nav__item">Book cleaning</a> <a href="contact_us.html" class="nav__item">Contact Us</a> <a href="about.html" class="nav__item">About</a> <a href="partners.html"
-                  class="nav__item">Partners</a> <a href="faq.html" class="nav__item">FAQ</a> </nav>
+              <nav class="nav"> <a href="services.html" class="nav__item">Services</a> <a href="residental_booking.html" class="nav__item">Book cleaning</a> <a href="contact_us.html" class="nav__item">Contact Us</a> <a href="testimonials.html" class="nav__item">Testimonials</a>                <a href="about.html" class="nav__item">About</a> <a href="partners.html" class="nav__item">Partners</a> <a href="faq.html" class="nav__item">FAQ</a> </nav>
               <div class="header__profile"> <a href="tel:(347) 896-2580" class="header__phone">(347) 896-2580</a> <a href="#" class="header__login">Login</a> </div>
             </div>
             <a href="#" id="touch-menu">
@@ -78,13 +77,30 @@
                 <p class="stage__name">addons</p>
                 <div class="stage__value">
                   <div class="addons">
-                    <div class="addon addon--remove"> <svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg> <a href="#" class="icon-action icon-remove" type="button">
-                  <span></span><span></span>
-                </a> </div>
-                    <div class="addon"> <svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg> </div>
-                    <div class="addon addon--add"> <svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg> <a href="#" class="icon-action icon-add" type="button">
-                  <span></span><span></span>
-                </a> </div>
+                    <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-fridge" name="addon-fridge" checked> <label for="addon-fridge">
+                    <span class="addon__icon">
+<svg class="icon icon-fridge"><use xlink:href="img/sprite.svg#icon-fridge"></use></svg>
+</span>
+                    <span class="addon__action">
+                      <span class="icon-action icon-remove"><span></span><span></span></span>
+                    </span>
+                  </label> </div>
+                    <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-oven" name="addon-oven"> <label for="addon-oven">
+                    <span class="addon__icon">
+<svg class="icon icon-grave"><use xlink:href="img/sprite.svg#icon-grave"></use></svg>
+</span>
+                    <span class="addon__action">
+                      <span class="icon-action icon-add"><span></span><span></span></span>
+                    </span>
+                  </label> </div>
+                    <div class="booking__addon"> <input type="checkbox" class="addon-checkbox" id="addon-cabinet" name="addon-cabinet"> <label for="addon-cabinet">
+                  <span class="addon__icon">
+<svg class="icon icon-wardrobe"><use xlink:href="img/sprite.svg#icon-wardrobe"></use></svg>
+</span>
+                  <span class="addon__action">
+                    <span class="icon-action icon-add"><span></span><span></span></span>
+                  </span>
+                </label> </div>
                   </div>
                 </div>
               </div>
@@ -100,7 +116,7 @@
               <form action="#">
                 <!-- row -->
                 <div class="row mb-40">
-                  <div class="col col-half"> <label class="form__label" for="form-card">credit card</label> <input type="text" name="card" id="form-card" class="form__input"> </div>
+                  <div class="col col-half credit-card-input"> <label class="form__label" for="form-card">credit card</label> <input type="text" name="card" id="form-card" class="form__input"> <span class="creditCardType"></span> </div>
                   <div class="col"> <label class="form__label" for="form-exp-data">exp.data</label> <input type="text" name="exp-data" id="form-exp-data" class="form__input"> </div>
                   <div class="col col-small"> <label class="form__label" for="form-cvv">cvv</label> <input type="text" name="cvv" id="form-cvv" class="form__input"> </div>
                 </div>
@@ -130,8 +146,8 @@
                   <!-- row -->
                   <div class="count__block">
                     <div class="row flex-end">
-                      <div class="col col--wide"> <label class="form__label" for="form-discount">discount</label> <input type="discount" name="discount" id="form-discount" class="form__input"> </div>
-                      <div class="col"> <a href="#" type="button" class="btn btn--dusty">Apply</a> </div>
+                      <div class="col col--wide"> <label class="form__label" for="form-discount-input">discount</label> <input type="discount" name="discount" id="form-discount-input" class="form__input"> </div>
+                      <div class="col"> <a href="#" type="button" class="btn btn--dusty" id="btn-discount-apply">Apply</a> </div>
                     </div>
                   </div>
                   <!-- cout block -->
@@ -218,6 +234,8 @@
     </div>
     <!-- END WRAPPPER -->
     <!-- BEGIN scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Main JS -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>
