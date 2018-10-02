@@ -10,7 +10,7 @@ var wow = new WOW({
   boxClass: 'wow',
   animateClass: 'animated',
   offset: 0,
-  mobile: true,
+  mobile: false,
   live: true,
   scrollContainer: null
 });
@@ -66,88 +66,13 @@ $('.star.rating').click(function() {
   $(this).parent().attr('data-stars', $(this).data('rating'));
 });
 
-// booking time periods begin 
-const periodsEarly = [{
-    id: 'timePeriod-1',
-    value: '08:00 am - 09:00 am',
-    value24: '08:00 - 09:00'
-  },
-  {
-    id: 'timePeriod-2',
-    value: '09:00 am - 10:00 am',
-    value24: '09:00 - 10:00'
-  },
-  {
-    id: 'timePeriod-3',
-    value: '10:00 am - 11:00 am',
-    value24: '10:00 - 11:00'
-  },
-  {
-    id: 'timePeriod-4',
-    value: '11:00 am - 12:00 am',
-    value24: '11:00 - 12:00'
-  },
-  {
-    id: 'timePeriod-5',
-    value: '12:00 am - 01:00 pm',
-    value24: '09:00 - 10:00'
-  },
-  {
-    id: 'timePeriod-6',
-    value: '01:00 pm - 02:00 pm',
-    value24: '13:00 - 14:00'
-  },
-  {
-    id: 'timePeriod-7',
-    value: '14:00 pm - 03:00 pm',
-    value24: '14:00 - 15:00'
-  },
-  {
-    id: 'timePeriod-8',
-    value: '03:00 pm - 04:00 pm',
-    value24: '15:00 - 16:00'
-  },
-  {
-    id: 'timePeriod-9',
-    value: '04:00 pm - 05:00 pm',
-    value24: '16:00 - 17:00'
-  },
-  {
-    id: 'timePeriod-10',
-    value: '05:00 pm - 06:00 pm',
-    value24: '17:00 - 18:00'
-  }
-];
-// create markup
-const periodsMarkup = `
-  ${periodsEarly.map(period => 
-  `<div class="periods__item">
-    <input type="radio" id="${period.id}" name="periods-radio-group" class="periods__radio-input">
-    <label for="${period.id}" class="periods__label">
-      <span class="periods__value">${period.value}</span>
-      <span class="periods__value24">${period.value24}</span>
-      <a href="residental_booking_address.html" type="button" class="btn">Confirm</a>
-    </label>
-    </div>`
-  ).join('')}
-`;
-// initialize container
-const periodsWrap = document.getElementById('periodsWrap');
-// render
-if (periodsWrap) {
-  periodsWrap.innerHTML = periodsMarkup;
-}
-// change time format of the time periods
-$('.switch-input').click(function() {
-  if ($(this).is(':checked')) {
-    $('.periods__label').toggleClass('switched24')
-  }
-});
-// booking time periods end
-
 // change addon__action icon
 $('.addon-checkbox').click(function() {
-    $(this).next().find(".icon-action").toggleClass( "icon-add" ).addClass('icon-remove')
+  $(this).next().find(".icon-action").toggleClass("icon-add").addClass('icon-remove')
+});
+
+$('.periods__item').click(function() {
+  $(".btn-next").addClass('btn-next--fixed');
 });
 
 // Slider on the Homepage
@@ -1424,3 +1349,9 @@ if (datepick) {
   });
 }
 // Datepickk end
+datepicker.onSelect = function(checked) {
+  var state = (checked) ? 'selected' : 'unselected';
+  // alert(this.toLocaleDateString() + ' ' + state)
+  var btnFixed = document.querySelector('.btn-next')
+  btnFixed.classList.add("btn-next--fixed");
+};

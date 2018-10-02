@@ -99,6 +99,10 @@ body {
   margin-bottom: 40px;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
 a {
   color: inherit;
   transition: all 0.2s ease;
@@ -298,7 +302,12 @@ button {
 }
 
 .header--order {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #f8f8f8;
   .only-narrow {
     display: none;
   }
@@ -503,7 +512,21 @@ button {
 }
 
 .btn-next {
-  margin: 60px auto 0;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  &--fixed {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 2vw;
+    margin: auto;
+  }
+}
+
+.btn--next {
+  margin: 0 auto;
 }
 
 // custom checkbox
@@ -550,66 +573,6 @@ button {
 }
 
 // custom checkbox end
-// custom swither
-.switch {
-  position: relative;
-  display: flex;
-  height: 36px;
-  width: 122px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  overflow: hidden;
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    border: solid 1px #d7d7d7;
-  }
-}
-
-.switch-label {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  width: 50%;
-  font-size: 16px;
-  color: #8c8c8c;
-  text-align: center;
-  cursor: pointer;
-}
-
-.switch-input {
-  display: none;
-}
-
-.switch-input:checked+.switch-label {
-  color: #fff;
-  transition: 0.15s ease-out;
-}
-
-.switch-input:checked+.switch-label-on~.switch-selection {
-  left: 62px;
-}
-
-.switch-selection {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  left: 0px;
-  width: 62px;
-  height: 100%;
-  background-color: #4d9fce;
-  transition: left 0.15s ease-out;
-}
-
-// custom swither end
 // icons
 .icon-arrow-up {
   fill: #4d9fce;
@@ -678,7 +641,7 @@ button {
   margin: auto;
   width: 16px;
   height: 16px;
-  z-index: 10;
+  z-index: 9;
   transition: all .2s ease;
   transform-origin: center;
   &:hover {
@@ -1694,6 +1657,8 @@ button {
   }
   .paragraph {
     color: #a1a1a1;
+    text-align: justify;
+    text-justify: inter-word;
     span {
       color: #505050;
     }
@@ -1771,6 +1736,14 @@ button {
     max-width: 90%;
     font-family: $font-light;
     color: #1d1d1d;
+  }
+  .content__text.mt {
+    margin-top: 1.5em;
+  }
+  .services__picture {
+    img {
+      min-width: 50px;
+    }
   }
 }
 
@@ -2117,7 +2090,7 @@ button {
       height: 1px;
       position: absolute;
       left: 0;
-      z-index: 100;
+      z-index: 1;
     }
     &:before {
       height: 2px;
@@ -2181,21 +2154,10 @@ button {
     font-weight: bold;
     color: #013654;
   }
-  &__zone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #bababa;
-    font-size: 18px;
-    line-height: 1;
-  }
-  .time__switcher {
-    margin-left: 25px;
-  }
   .time__period-wrap {
     max-width: 435px;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 50px;
   }
   &__periods {
     display: flex;
@@ -2228,10 +2190,9 @@ button {
     left: 0;
     opacity: 0;
     &:checked {
-      +.periods__label .btn {
-        display: flex;
-        opacity: 1;
-        z-index: 1;
+      +.periods__label {
+        background-color: #006eac;
+        color: #ffffff;
       }
     }
   }
@@ -2245,43 +2206,10 @@ button {
     background-color: #ffffff;
     border: solid 1px #cccccc;
     transition: all 0.2s ease;
-    .btn {
-      position: absolute;
-      left: 0;
-      right: 0;
-      display: flex;
-      opacity: 0;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      font-size: 14px;
-      color: #ffffff;
-      border-radius: 2px;
-      background-color: #91c700;
-      border: solid 1px #91c700;
-      transition: opacity 0.1s ease-in-out;
-      z-index: -5;
-      &:hover {
-        background-color: lighten(#91c700, 3%);
-      }
-    }
     &:hover {
-      color: #ffffff;
-      background-color: $ocean-blue;
+      border: 1px solid $ocean-blue;
       cursor: pointer;
     }
-  }
-  .switched24 {
-    .periods__value {
-      display: none;
-    }
-    .periods__value24 {
-      display: block;
-    }
-  }
-  .periods__value24 {
-    display: none;
   }
 }
 
